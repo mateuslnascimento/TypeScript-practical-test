@@ -1,6 +1,6 @@
 'use strict';
 
-class charEnumerator {
+export default class CharEnumerator {
     char: string;
     
     constructor(char: string) {

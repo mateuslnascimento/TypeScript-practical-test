@@ -15,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/mateuslnascimento/TypeScript-practical-test/issues"
   },
+  "type":"module",
   "homepage": "https://github.com/mateuslnascimento/TypeScript-practical-test#readme",
   "devDependencies": {
     "@types/node": "^14.14.35",
