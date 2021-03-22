@@ -1,0 +1,23 @@
+{
+  "name": "typescript-practical-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateuslnascimento/TypeScript-practical-test.git"
+  },
+  "author": "Mateus Lopes do Nascimento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateuslnascimento/TypeScript-practical-test/issues"
+  },
+  "homepage": "https://github.com/mateuslnascimento/TypeScript-practical-test#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "typescript": "^4.2.3"
+  }
+}
