@@ -8,7 +8,7 @@ export default class CharEnumerator {
     }
 
     countChar():CountResponse {
-      const arrayOfChar = this.char.replace(' ', '').split('');
+      const arrayOfChar = this.char.replace(' ', '').toLowerCase().split('');
 
       const charCounted = arrayOfChar.reduce((countResponse: CountResponse, char: string) => {
         const response = countResponse;
