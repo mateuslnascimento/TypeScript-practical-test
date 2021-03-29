@@ -1,8 +1,6 @@
 'use strict';
 
-type CountResponse = {
-    [key: string]: number;
-}
+import { CountResponse } from './types/CountResponse';
 
 export default class CharEnumerator {
     char: string;
