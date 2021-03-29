@@ -10,12 +10,14 @@ export default class CharEnumerator {
     countChar():CountResponse {
       const arrayOfChar = this.char.replace(' ', '').split('');
 
-      const charCounted = arrayOfChar.reduce((responseObject: CountResponse, char: string) => {
-        const value = responseObject[char] ? responseObject[char] += 1 : responseObject[char] = 1;
+      const charCounted = arrayOfChar.reduce((countResponse: CountResponse, char: string) => {
+        const response = countResponse;
 
-        responseObject[char] = value;
+        const value = response[char] ? response[char] += 1 : response[char] = 1;
 
-        return responseObject;
+        response[char] = value;
+
+        return response;
       }, {});
 
       return charCounted;

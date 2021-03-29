@@ -1,6 +1,6 @@
 'use sctrict';
 
-import CharEnumerator from './class';
+import CharEnumerator from './classes/CharEnumerator';
 
 const charEnumerator = new CharEnumerator('teste');
 
