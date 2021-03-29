@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "airbnb-base"
@@ -14,9 +15,18 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "import/no-unresolved": [
-            2,
-            {"caseSensitive": true }
-        ]
+       "import/extensions": [
+           "error",
+           "ignorePackages",
+           {
+               "ts": "never",
+               "js": "never"
+           }
+       ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {} 
+        }
     }
 }

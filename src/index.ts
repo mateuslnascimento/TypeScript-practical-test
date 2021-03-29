@@ -2,6 +2,6 @@
 
 import CharEnumerator from './classes/CharEnumerator';
 
-const charEnumerator = new CharEnumerator('teste');
+const charEnumerator = new CharEnumerator('Test of Character counting');
 
-console.log(charEnumerator);
+console.log(charEnumerator.countChar());
