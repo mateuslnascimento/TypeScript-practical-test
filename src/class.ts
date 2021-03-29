@@ -1,27 +1,23 @@
-'use strict';
-
 import { CountResponse } from './types/CountResponse';
 
 export default class CharEnumerator {
     char: string;
-    
+
     constructor(char: string) {
-        this.char = char;
-    } 
+      this.char = char;
+    }
 
     countChar():CountResponse {
-        const arrayOfChar = this.char.replace(' ', '').split('');
-    
-        const charCounted = arrayOfChar.reduce((responseObject: CountResponse, char: string) => {
-            
-            const value = responseObject[char] ? responseObject[char]++ : responseObject[char] = 1;
-            
-            responseObject[char] = value;
+      const arrayOfChar = this.char.replace(' ', '').split('');
 
-            return responseObject;
+      const charCounted = arrayOfChar.reduce((responseObject: CountResponse, char: string) => {
+        const value = responseObject[char] ? responseObject[char]++ : responseObject[char] = 1;
 
-        }, {});
+        responseObject[char] = value;
 
-        return charCounted;
-   }
+        return responseObject;
+      }, {});
+
+      return charCounted;
+    }
 }
