@@ -1,4 +1,4 @@
-import { CountResponse } from './types/CountResponse';
+import { CountResponse } from '../types/CountResponse';
 
 export default class CharEnumerator {
     char: string;
@@ -11,7 +11,7 @@ export default class CharEnumerator {
       const arrayOfChar = this.char.replace(' ', '').split('');
 
       const charCounted = arrayOfChar.reduce((responseObject: CountResponse, char: string) => {
-        const value = responseObject[char] ? responseObject[char]++ : responseObject[char] = 1;
+        const value = responseObject[char] ? responseObject[char] += 1 : responseObject[char] = 1;
 
         responseObject[char] = value;
 
