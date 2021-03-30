@@ -1,13 +1,11 @@
 import { CountResponse } from '../types/CountResponse';
 
 export default class CharEnumerator {
-    char: string;
+    char!: String;
 
-    constructor(char: string) {
-      this.char = char;
-    }
+    countChar(phraseToObject: String): CountResponse {
+      this.char = phraseToObject;
 
-    countChar():CountResponse {
       const arrayOfChar = this.char.replace(' ', '').toLowerCase().split('');
 
       const charCounted = arrayOfChar.reduce((countResponse: CountResponse, char: string) => {
